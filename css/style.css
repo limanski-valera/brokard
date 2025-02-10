@@ -787,8 +787,8 @@ h6 {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
-    width: 20%;
+    right: -10%;
+    width: 15%;
     background: url(../img/offer-decor-right.webp) center right/contain no-repeat;
     height: 120%;
     pointer-events: none
