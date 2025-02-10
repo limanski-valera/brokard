@@ -272,6 +272,9 @@ h6 {
   -webkit-transform: translateY(-70%);
   transform: translateY(-70%)
 }
+.flowers .offer__quote {
+  left: 35%
+}
 .offer__title {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -787,11 +790,14 @@ h6 {
     content: "";
     position: absolute;
     top: 0;
-    right: -10%;
-    width: 15%;
+    right: -5%;
+    width: 10%;
     background: url(../img/offer-decor-right.webp) center right/contain no-repeat;
     height: 120%;
     pointer-events: none
+  }
+  .flowers .offer::after {
+    right: -10%
   }
 }
 @media (min-width:47.99875em) {
