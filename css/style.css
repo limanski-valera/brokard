@@ -400,10 +400,7 @@ h6 {
   gap: 3rem
 }
 .magic-block__img {
-  min-height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover
+  width: 100%
 }
 .magic-block__content {
   display: flex
@@ -487,13 +484,13 @@ h6 {
 .highlighter__image {
   flex: 0 0 43.072917%;
   padding-top: 4.375rem;
-  padding-bottom: 6.25rem
+  padding-bottom: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
 }
 .highlighter__image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover
+  width: 100%
 }
 .highlighter__content {
   text-align: right
@@ -512,7 +509,6 @@ h6 {
   margin-bottom: 2.5rem
 }
 .highlighter__item:last-child {
-  margin-top: -50px;
   justify-content: flex-end
 }
 .highlighter__item-text {
@@ -840,6 +836,9 @@ h6 {
     display: flex;
     gap: 4rem
   }
+  .highlighter__item:last-child {
+    margin-top: -50px
+  }
   .mascara {
     padding-top: 3.125rem;
     display: grid;
@@ -878,10 +877,6 @@ h6 {
   }
   .magic-block__content {
     align-items: flex-end
-  }
-  .magic-block__title {
-    -webkit-transform: translateX(-33%);
-    transform: translateX(-33%)
   }
   .magic-block__bottom {
     display: grid;
@@ -956,6 +951,12 @@ h6 {
 @media (min-width:1300px) {
   .cream-shiseido__content {
     padding-top: 4rem
+  }
+}
+@media (min-width:1400px) {
+  .magic-block__title {
+    -webkit-transform: translateX(-33%);
+    transform: translateX(-33%)
   }
 }
 @media (min-width:1700px) {
@@ -1174,8 +1175,8 @@ h6 {
   .highlighter__image {
     padding-bottom: 20px
   }
-  .highlighter__item:first-child {
-    margin-bottom: -50px
+  .highlighter__item:last-child {
+    margin-top: 1.875rem
   }
   .highlighter__item {
     padding-right: 0
@@ -1259,6 +1260,18 @@ h6 {
   .offer::after {
     right: -15%;
     width: 30%
+  }
+}
+@media (min-width:47.99875em)and (max-width:1700px) {
+  .main-block__title {
+    font-size: 3.125rem;
+    margin-left: 30%
+  }
+  .main-block__title--small {
+    font-size: 1.875rem
+  }
+  .main-block__left {
+    margin-top: -170px
   }
 }
 @media (min-width:61.99875em)and (max-width:1600px) {
